@@ -1,0 +1,15 @@
+
+
+ion-item.item:hover a {
+  background-color: yellow;
+  box-shadow: inset 0px 0px 0px 1px black;
+}
+
+ .item-complex .item-content, .item{
+    background-color: #99FF33;
+    
+}
+
+.pane {
+    background-color: #99FF33;
+}
