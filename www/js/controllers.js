@@ -1,34 +1,38 @@
 angular.module('calorific.controllers', [])
 
 .controller('AppCtrl', function($scope) {
-  $scope.categories = ['Breakfasts', 'Lunches', 'Dinners', 'Drinks'];
+  $scope.categories = ['Home','Breakfasts', 'Lunches', 'Dinners', 'Drinks'];
 })
 
 .controller('DishesCtrl', function($scope, $stateParams) {
-  categories = ['Breakfasts', 'Lunches', 'Dinners', 'Drinks'];
+  categories = ['Calorific','Breakfasts', 'Lunches', 'Dinners', 'Drinks'];
 
   dishes = [
+  
     [
-      "Cornflakes	(390 calories per 100g)",
-      "Porridge		(368 calories per 100g)",
-      "Weetabix 	(338 calories per 100g)",
+      "Welcome to Calorific. Calorific has been designed by the irish government to help you track your calorie intake on the go. You can use the side menu to navigate through the app.",
+    ],
+    [
+      "Cornflakes       (390 calories per 100g)",
+      "Porridge         (368 calories per 100g)",
+      "Weetabix         (338 calories per 100g)",
       "Full Irish Breakfast (687 calories per 300g)",
     ],
     [
-      "Ham and Cheese Sandwich 	(267 calories per 100g)",
-      "BLT Sandwich 	(246 calories per 100g)",
-      "Vegetable soup	(42 calories per 100g)",
-      "Chocolate Bar 	(530 calories per 100g)",
-      "Grilled Cheese 	(239 calories per 100g)",
-      "Sausage Roll		(355 calories per 100g)",
-      "Yoghurt	(61 calories per 100g)",
-      "Apple 	(52 calories per 100g)",
-      "Orange	(62 calories per 100g)",
+      "Ham and Cheese Sandwich  (267 calories per 100g)",
+      "BLT Sandwich     (246 calories per 100g)",
+      "Vegetable soup   (42 calories per 100g)",
+      "Chocolate Bar    (530 calories per 100g)",
+      "Grilled Cheese   (239 calories per 100g)",
+      "Sausage Roll             (355 calories per 100g)",
+      "Yoghurt  (61 calories per 100g)",
+      "Apple    (52 calories per 100g)",
+      "Orange   (62 calories per 100g)",
     ],
     [
-      "Irish bacon and cabbage 	(72 calories per 100g)",
-      "Potato 	(75 calories per 100g)",
-      "Beef 	(194 calories per 100g)",
+      "Irish bacon and cabbage  (72 calories per 100g)",
+      "Potato   (75 calories per 100g)",
+      "Beef     (194 calories per 100g)",
       "Mutton (292 calories per 100g)",
       "Fries  (239 calories per 100g)",
       "Chicken Nuggets (297 calories per 100g)",
@@ -47,12 +51,13 @@ angular.module('calorific.controllers', [])
       "Orange Squash(2 calories per 100ml)",
       "Apple juice(55 calories per 100ml)",
       "Coffee(5 calories per 100ml)",
-	  "Latte(135 calories per 100ml)",
-	  "Cappuccino(31 calories per 100ml)",
+          "Latte(135 calories per 100ml)",
+          "Cappuccino(31 calories per 100ml)",
     ]
   ];
-  
+
   $scope.category = categories[$stateParams.dishesId];
   $scope.dishes = dishes[$stateParams.dishesId];
 
 });
+

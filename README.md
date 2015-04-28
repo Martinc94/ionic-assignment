@@ -1,5 +1,4 @@
-# Mobile Application Development Project Template
-You must use this template to start your project.
-
-## How to get this template
-You can clone it using 'git clone <url>' where <url> is the ssh url on the right, or you can click "Download ZIP" on the right and start from there.
+# Mobile Application Development Project by Martin Coleman G00312351
+Calorific displays the calories in common everyday foods that young Irish adults eat.
+The app contains a side menu which lets you browse some "Breakfasts", "Lunches", "Dinners" and "Drinks".
+Each food items name is displayed and its calorie count per 100g/100ml for most foods.
